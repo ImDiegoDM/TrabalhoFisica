@@ -9,13 +9,17 @@ public class MyFisica : MonoBehaviour {
 	public float angularDrag;
 
 	Collider collider;
-	List<Vector3> forces;
 	Vector3 gravityForce;
-	Vector3 aceleration;
 	Vector3 angularAceleration;
 	Vector3 arForce;
 	Vector3 inercia;
 	Vector3 cineticEnergy;
+	Vector3 velocity= Vector3.zero;
+	Vector3 forcaResultante= Vector3.zero;
+
+	List<Vector3> forcesAplied;
+
+	float time=0;
 
 	Vector3 initialPose;
 	Vector3 finalPose;
@@ -23,14 +27,14 @@ public class MyFisica : MonoBehaviour {
 	float velociade=0;
 	Vector3 peso;
 
-	bool onGround=false;
+	public bool onGround=false;
 
 	// Use this for initialization
 	void Start () {
-		forces = new List<Vector3> ();
 		gravityForce = Vector3.zero;
 		gravityForce.y = -gravidade;
 		peso = gravityForce * massa;
+		forcesAplied = new List<Vector3> ();
 	}
 
 	void CalculaInercia()// calcula inercia com base no tipo de colider
@@ -44,9 +48,58 @@ public class MyFisica : MonoBehaviour {
 		}
 		inercia = new Vector3 ((1/12)*massa*(Mathf.Pow(box.size.y,2)+Mathf.Pow(box.size.z,2)),(1/12)*massa*(Mathf.Pow(box.size.x,2)+Mathf.Pow(box.size.z,2)),(1/12)*massa*(Mathf.Pow(box.size.x,2)+Mathf.Pow(box.size.y,2)));
 	}
-
-	public void OnCollisionStay(Collision col)
+	public void OnCollisionEnter(Collision collision)
 	{
+		Vector3 normalVector=Vector3.zero;
+		//forces.Add (new Vector3(0,aceleration.x*-1,0));
+		for (int i = 0; i < collision.contacts.Length; i++) {
+			normalVector += collision.contacts [i].normal;
+		}
+
+		normalVector.Normalize ();
+
+		Vector3 resultante = (massa * velocity)+(peso);
+		Vector3 normalforce = (normalVector * resultante.magnitude);
+		Vector3 friction;
+
+		friction = velocity.magnitude*normalVector* Vector3.Dot (-normalVector, velocity.normalized);
+		velocity += friction;
+		//velocity.y = 0;
+		onGround = true;
+	}
+
+	public void OnCollisionStay(Collision collision)
+	{
+		Vector3 normalVector=Vector3.zero;
+		//forces.Add (new Vector3(0,aceleration.x*-1,0));
+		for (int i = 0; i < collision.contacts.Length; i++) {
+			normalVector += collision.contacts [i].normal;
+		}
+		/*
+		Vector3 forceApplied = (massa * velocity /time ) + (massa * peso);
+
+		Vector3 normalForce = normalVector.normalized * forceApplied.magnitude * Vector3.Dot (-normalVector, forceApplied.normalized);
+
+
+		Vector3 forceAppliedWithEnergyTransfer = (massa * velocity /time) + (massa * peso);
+
+		//Calculating bouciness
+		Vector3 boucinessForce = (normalVector) * 0 * forceAppliedWithEnergyTransfer.magnitude;
+		Vector3 aceleration = (normalForce+boucinessForce) / massa;
+
+		velocity += aceleration*time;
+		print (forceApplied);
+
+		onGround = true;*/
+		normalVector.Normalize ();
+
+		Vector3 resultante = (massa * velocity)+(peso);
+		Vector3 normalforce = (normalVector * resultante.magnitude);
+		Vector3 friction;
+
+		friction = velocity.magnitude*normalVector* Vector3.Dot (-normalVector, velocity.normalized);
+		velocity += friction;
+		//velocity.y = 0;
 		onGround = true;
 	}
 
@@ -56,20 +109,18 @@ public class MyFisica : MonoBehaviour {
 	}
 
 	Vector3 SomatorioForces(){ // retorna o somatorio das forças exercidas nele
-		if (!onGround) {// se estiver no chão não calcula gravidade
-			forces.Add (peso);
+		if (!onGround) {
+			forcaResultante += peso;
 		}
-		Vector3 resultante=Vector3.zero;
-		for (int i = 0; i < forces.Count; i++) {
-			resultante += forces [i];
-		}
-		forces.Clear ();
-		return (resultante) / massa;
+
+		print (forcaResultante);
+
+		return (forcaResultante) / massa;
 	}
 
 	public void AddForce(Vector3 f) // adiciona uma força 
 	{
-		forces.Add (f);
+		forcaResultante += f;
 	}
 
 	void AngularAceleration(Vector3 torque)// calcula a aceleração angular com base no torque
@@ -84,17 +135,21 @@ public class MyFisica : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
-		velociade = aceleration.magnitude;
+	void LateUpdate () {
+		time += Time.deltaTime;
+		//velociade = aceleration.magnitude;
 
 		if (velociade == 0) {
 			initialPose = this.transform.position;
 		}
+		Vector3 aceleration =SomatorioForces ()*Time.deltaTime;
 
-		cineticEnergy = 0.5f * massa * ElevaVetor(aceleration,2);
-		aceleration =SomatorioForces ()*Time.deltaTime;
+		velocity += aceleration;
 
-		this.transform.position += aceleration;
+
+		this.transform.position += velocity*Time.deltaTime;
+
 		transform.rotation *= Quaternion.Euler (angularAceleration);
+		forcaResultante = Vector3.zero;
 	}
 }

@@ -3,6 +3,7 @@ using System.Collections;
 [RequireComponent(typeof(MyFisica))]
 public class AirPlane : MonoBehaviour {
 	MyFisica fisica;
+	ProfessorRigidBody f;
 	float forceAr;// força do ar com base na altitude
 	float altitude;
 	public float MotorForce; // força maxima que o motor alcança
@@ -33,7 +34,7 @@ public class AirPlane : MonoBehaviour {
 		force *= (MotorForce * motorFactor);// calcula a força com base no motor e o qual aquele motor está sendo usado
 		fisica.AddForce(force);
 		Vector3 arFoce = Vector3.up;
-		arFoce *= ((MotorForce * motorFactor) * forceAr)/fisica.massa;
+		arFoce *= ((MotorForce * motorFactor) * forceAr);
 		fisica.AddForce (arFoce);
 	}
 
