@@ -7,10 +7,11 @@ public class MyFisica : MonoBehaviour {
 	public float gravidade;
 	public float ResistenciaAr;
 	public float angularDrag;
+	public float drag;
 
 	Collider collider;
 	Vector3 gravityForce;
-	Vector3 angularAceleration;
+	Vector3 angularVelocity=Vector3.zero;
 	Vector3 arForce;
 	Vector3 inercia;
 	Vector3 cineticEnergy;
@@ -30,24 +31,41 @@ public class MyFisica : MonoBehaviour {
 	public bool onGround=false;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		gravityForce = Vector3.zero;
 		gravityForce.y = -gravidade;
 		peso = gravityForce * massa;
 		forcesAplied = new List<Vector3> ();
+		CalculaInercia ();
 	}
 
 	void CalculaInercia()// calcula inercia com base no tipo de colider
 	{
 		BoxCollider box = GetComponent<BoxCollider> ();
-		if (box == null) {
-			SphereCollider sphere = GetComponent<SphereCollider> ();
-			float i = (2.0f / 3f) * massa * (sphere.radius * sphere.radius);
-			inercia = new Vector3 (i,i,i);
-			return;
-		}
-		inercia = new Vector3 ((1/12)*massa*(Mathf.Pow(box.size.y,2)+Mathf.Pow(box.size.z,2)),(1/12)*massa*(Mathf.Pow(box.size.x,2)+Mathf.Pow(box.size.z,2)),(1/12)*massa*(Mathf.Pow(box.size.x,2)+Mathf.Pow(box.size.y,2)));
+		inercia = new Vector3 ((1f/12f)*massa*(Mathf.Pow(box.size.y,2f)+Mathf.Pow(box.size.z,2f)),(1f/12f)*massa*(Mathf.Pow(box.size.x,2f)+Mathf.Pow(box.size.z,2f)),(1f/12f)*massa*(Mathf.Pow(box.size.x,2f)+Mathf.Pow(box.size.y,2f)));
+
 	}
+
+	public void ApplyTorqueByPointForce(Vector3 point, Vector3 force)
+	{
+		Vector3 torque = Vector3.Cross (point - transform.position, force);
+
+		angularVelocity += CalculateAngularAcceleration (torque);
+	}
+
+	Vector3 CalculateAngularAcceleration(Vector3 torque)
+	{
+		//from tangent acceleration to angular acceleration
+		Vector3 angularAceleration = torque;
+
+		//Calculating torque based in it's inertia
+		angularAceleration.x /= inercia.x;
+		angularAceleration.y /= inercia.y;
+		angularAceleration.z /= inercia.z;
+
+		return angularAceleration;
+	}
+
 	public void OnCollisionEnter(Collision collision)
 	{
 		Vector3 normalVector=Vector3.zero;
@@ -66,6 +84,10 @@ public class MyFisica : MonoBehaviour {
 		velocity += friction;
 		//velocity.y = 0;
 		onGround = true;
+	}
+
+	public Vector3 getVelocity(){
+		return velocity;
 	}
 
 	public void OnCollisionStay(Collision collision)
@@ -113,7 +135,7 @@ public class MyFisica : MonoBehaviour {
 			forcaResultante += peso;
 		}
 
-		print (forcaResultante);
+		//print (forcaResultante);
 
 		return (forcaResultante) / massa;
 	}
@@ -121,12 +143,6 @@ public class MyFisica : MonoBehaviour {
 	public void AddForce(Vector3 f) // adiciona uma força 
 	{
 		forcaResultante += f;
-	}
-
-	void AngularAceleration(Vector3 torque)// calcula a aceleração angular com base no torque
-	{
-		angularAceleration = new Vector3(torque.x / inercia.x, torque.y / inercia.y, torque.z / inercia.z);
-		angularAceleration -= angularAceleration * angularDrag * Time.deltaTime;
 	}
 
 	Vector3 ElevaVetor(Vector3 vetor, float indice)// metodo para elevar um vetor a um numero
@@ -142,14 +158,24 @@ public class MyFisica : MonoBehaviour {
 		if (velociade == 0) {
 			initialPose = this.transform.position;
 		}
+
+		transform.Rotate(angularVelocity * Time.deltaTime,Space.World);
+
+		//Update torque
+		angularVelocity -= angularVelocity * angularDrag * Time.deltaTime;
+
+		if (angularVelocity.magnitude < 0.1f)
+			angularVelocity = Vector3.zero;
+
 		Vector3 aceleration =SomatorioForces ()*Time.deltaTime;
 
 		velocity += aceleration;
 
+		velocity -= velocity * drag * Time.deltaTime;
+
 
 		this.transform.position += velocity*Time.deltaTime;
 
-		transform.rotation *= Quaternion.Euler (angularAceleration);
 		forcaResultante = Vector3.zero;
 	}
 }
