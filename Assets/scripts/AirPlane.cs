@@ -19,45 +19,69 @@ public class AirPlane : MonoBehaviour {
 	public float profundoresForce;
 	public float lemeforce;
 
+	float superficeFront;//valo da area da superfice quando estiver reto
+
 
 	// Use this for initialization
 	void Awake () {
 		fisica = this.GetComponent<MyFisica> ();
+		superficeFront = areaDeSuperficie;
 	}
 
 	void setArForce(){ // seta a força do ar com base na altitude
-		forceAr=1-(altitude/1500);
+		forceAr=1f-(altitude/800f);
+		if (forceAr < 0f) {
+			forceAr = 0;
+		}
 	}
 
 	void CalculaAltitude() 
 	{
-		altitude = this.transform.position.y*10;
+		altitude = this.transform.position.y*10f;
 	}
 
 
 
 	void setForces()// calcula as forças exercidar no avião e seta elas na fisica
 	{
-		CalculaAltitude ();
+		CalculaAltitude ();//calcula a altitude do avião
 		setArForce ();// seta a densidade do ar
 
 
 		Vector3 force = transform.forward;
 		force *= (MotorForce * motorFactor);// calcula a força com base no motor e o qual aquele motor está sendo usado
-		fisica.AddForce(force);
 
+		float superficieAtual=areaDeSuperficie;// seta a area de superfice do avião
 
 		Vector3 arFoce = transform.up;
-		arFoce *= ((MotorForce * motorFactor) * forceAr) * fisica.getVelocity ().magnitude/fisica.massa;
-		fisica.AddForce (arFoce);
+		arFoce *= ((MotorForce * motorFactor) * forceAr) * fisica.getVelocity ().magnitude/fisica.massa;// calcula a força do ar com base na velocidade do avião
+		//se estiver muito inclinado a potencia do motor cai para 40% e a superfice de contato do avião aumenta drasticamente
+		if ((this.transform.eulerAngles.x < 330f && this.transform.eulerAngles.x > 210f) || (this.transform.eulerAngles.x < 150f && this.transform.eulerAngles.x > 30f)) {
+			force = 40f * force/ 100f;
+			superficieAtual *= 30f;
+		}
 
+		// se o angulo de atack for muito inclinado o força do motor cai para 5%
+		if ((this.transform.eulerAngles.x < 290f && this.transform.eulerAngles.x > 250f) || (this.transform.eulerAngles.x < 100f && this.transform.eulerAngles.x > 70f)) {
+			force = 5f * force/ 100f;
+		}
 
+		//ponto onde ira acontecer uma leve inclinação se o aviao não estiver em equilibrio
 		Vector3 point = this.transform.position;
 		point.z += 0.1f;
-		//fisica.ApplyTorqueByPointForce (point,arFoce);
 
-		float drag = coeficienteAeroDinamica * forceAr / 2 * areaDeSuperficie * Mathf.Pow (fisica.getVelocity().magnitude,2);
+		// se o avião estiver mais de 10 angulos do ponto inicial dele ele não esta em equilibrio
+		if (!((this.transform.eulerAngles.x<360f&&this.transform.eulerAngles.x>350f ) || (this.transform.eulerAngles.x<10&&this.transform.eulerAngles.x>0 ))) {// angulo de ataque faz com que ele fique em equilibrio
+			fisica.ApplyTorqueByPointForce (point,arFoce);
+		}
+
+		//calcula a força do ar que colide com a frente do avião
+		float drag = coeficienteAeroDinamica * (forceAr / 2) * superficieAtual * Mathf.Pow (fisica.getVelocity().magnitude,2);
+
+		fisica.AddForce(force);
+		fisica.AddForce (arFoce);
 		fisica.AddForce (drag*fisica.getVelocity().normalized*-1);
+
 	}
 
 	public void AileronsLeft(){
