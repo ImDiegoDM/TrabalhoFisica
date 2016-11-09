@@ -8,6 +8,7 @@ public class MyFisica : MonoBehaviour {
 	public float ResistenciaAr;
 	public float angularDrag;
 	public float drag;
+	public bool fisica;// variavel que controla a fisica
 
 	Collider collider;
 	Vector3 gravityForce;
@@ -152,30 +153,32 @@ public class MyFisica : MonoBehaviour {
 
 	// Update is called once per frame
 	void LateUpdate () {
-		time += Time.deltaTime;
-		//velociade = aceleration.magnitude;
-
-		if (velociade == 0) {
-			initialPose = this.transform.position;
+		if (fisica) {
+			time += Time.deltaTime;
+			//velociade = aceleration.magnitude;
+			
+			if (velociade == 0) {
+				initialPose = this.transform.position;
+			}
+			
+			transform.Rotate(angularVelocity * Time.deltaTime,Space.World);
+			
+			//Update torque
+			angularVelocity -= angularVelocity * angularDrag * Time.deltaTime;
+			
+			if (angularVelocity.magnitude < 0.1f)
+				angularVelocity = Vector3.zero;
+			
+			Vector3 aceleration =SomatorioForces ()*Time.deltaTime;
+			
+			velocity += aceleration;
+			
+			velocity -= velocity * drag * Time.deltaTime;
+			
+			
+			this.transform.position += velocity*Time.deltaTime;
+			
+			forcaResultante = Vector3.zero;
 		}
-
-		transform.Rotate(angularVelocity * Time.deltaTime,Space.World);
-
-		//Update torque
-		angularVelocity -= angularVelocity * angularDrag * Time.deltaTime;
-
-		if (angularVelocity.magnitude < 0.1f)
-			angularVelocity = Vector3.zero;
-
-		Vector3 aceleration =SomatorioForces ()*Time.deltaTime;
-
-		velocity += aceleration;
-
-		velocity -= velocity * drag * Time.deltaTime;
-
-
-		this.transform.position += velocity*Time.deltaTime;
-
-		forcaResultante = Vector3.zero;
 	}
 }

@@ -35,6 +35,11 @@ public class AirPlane : MonoBehaviour {
 		}
 	}
 
+	public void setFisica(bool value)
+	{
+		fisica.fisica = value;
+	}
+
 	void CalculaAltitude() 
 	{
 		altitude = this.transform.position.y*10f;
@@ -84,59 +89,82 @@ public class AirPlane : MonoBehaviour {
 
 	}
 
+	/// <summary>
+	/// Aciona os Airelons fazendo o avião rodar para a esquerda
+	/// </summary>
 	public void AileronsLeft(){
-		fisica.ApplyTorqueByPointForce (aileronsLeftPosition.position,transform.up*aileronsForce);
-	}
-
-	public void AileronsRight(){
 		fisica.ApplyTorqueByPointForce (aileronsRightPosition.position,transform.up*aileronsForce);
 	}
 
+
+	/// <summary>
+	/// Aciona os Ailerons fazendo o avião rodar para a direira
+	/// </summary>
+	public void AileronsRight(){
+		fisica.ApplyTorqueByPointForce (aileronsLeftPosition.position,transform.up*aileronsForce);
+	}
+
+	/// <summary>
+	/// Aciona os Profundores fazendo ele levantar o bico do avião
+	/// </summary>
 	public void ProfundoresUP(){
 		fisica.ApplyTorqueByPointForce (profundoresPosition.position,(transform.up*-1)*profundoresForce);
 	}
 
+
+	/// <summary>
+	/// Aciona os Profundores fazendo ele abaixar o bico do avião
+	/// </summary>
 	public void ProfundoresDown(){
 		Vector3 point = this.transform.position;
 		point.z -= 1.5f;
 		fisica.ApplyTorqueByPointForce (profundoresPosition.position,transform.up*profundoresForce);
 	}
 
+	/// <summary>
+	/// Aciona os lemes fazendo o avião virar a esquerda
+	/// </summary>
 	public void LemeLeft(){
 		fisica.ApplyTorqueByPointForce (lemePosition.position,transform.right*-1*lemeforce);
 	}
 
+	/// <summary>
+	/// Aciona os lemes fazendo o avião virar a direita
+	/// </summary>
 	public void LemeRigth(){
 		Vector3 point = this.transform.position;
 		point.z += 1.5f;
 		fisica.ApplyTorqueByPointForce (lemePosition.position,transform.right*lemeforce);
 	}
 
-	void Acelera()
+	/// <summary>
+	/// faz com que o motor do avião rode na potencia passada por parametro, sendo 0 = 0% e 1=100%
+	/// </summary>
+	/// <param name="fator">Fator do motor que ira usar</param>
+	public void forçaMotor(float fator)
 	{
-		if(motorFactor<1f)
+		if(motorFactor<fator)
 		{
 			motorFactor += 0.1f * Time.deltaTime;
 		}
-
+		else
+		{
+			motorFactor = fator;
+		}
 	}
 
-	void Desacelera()
+	public float getAltitude()
 	{
-		if(motorFactor>0f)
-		{
-			motorFactor -= 0.1f * Time.deltaTime;
-		}
+		return altitude;
+	}
+
+	public float getVelocityInKmh()
+	{
+		return fisica.getVelocity ().magnitude;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.Space)) {
-			Acelera ();
-		} 
-		else {
-			Desacelera ();
-		}
 
 		if (Input.GetKey (KeyCode.UpArrow)) {
 			ProfundoresUP ();
