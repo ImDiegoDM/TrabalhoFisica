@@ -18,6 +18,11 @@ public class AirPlane : MonoBehaviour {
 	public float aileronsForce;
 	public float profundoresForce;
 	public float lemeforce;
+    public float ArConstant;
+
+
+
+    Vector3 oldPostion=Vector3.zero;
 
 	float superficeFront;//valo da area da superfice quando estiver reto
 
@@ -29,9 +34,9 @@ public class AirPlane : MonoBehaviour {
 	}
 
 	void setArForce(){ // seta a força do ar com base na altitude
-		forceAr=1f-(altitude/800f);
-		if (forceAr < 0f) {
-			forceAr = 0;
+		forceAr=1f-(altitude/2500f);
+        if (forceAr < 0.1f) {
+			forceAr = 0.1f;
 		}
 	}
 
@@ -45,6 +50,12 @@ public class AirPlane : MonoBehaviour {
 		altitude = this.transform.position.y*10f;
 	}
 
+    Vector3 CalculaVelocidade()
+    {
+        Vector3 variacaoPosi = oldPostion - this.transform.position;
+        oldPostion = this.transform.position;
+        return variacaoPosi/Time.fixedDeltaTime;
+    }
 
 
 	void setForces()// calcula as forças exercidar no avião e seta elas na fisica
@@ -54,21 +65,22 @@ public class AirPlane : MonoBehaviour {
 
 
 		Vector3 force = transform.forward;
-		force *= (MotorForce * motorFactor);// calcula a força com base no motor e o qual aquele motor está sendo usado
+        force *= (MotorForce * motorFactor);// calcula a força com base no motor e o qual aquele motor está sendo usado
 
 		float superficieAtual=areaDeSuperficie;// seta a area de superfice do avião
 
 		Vector3 arFoce = transform.up;
-		arFoce *= ((MotorForce * motorFactor) * forceAr) * fisica.getVelocity ().magnitude/fisica.massa;// calcula a força do ar com base na velocidade do avião
+        arFoce *= fisica.getVelocity().magnitude*ArConstant*forceAr;// calcula a força do ar com base na velocidade do avião
 		//se estiver muito inclinado a potencia do motor cai para 40% e a superfice de contato do avião aumenta drasticamente
 		if ((this.transform.eulerAngles.x < 330f && this.transform.eulerAngles.x > 210f) || (this.transform.eulerAngles.x < 150f && this.transform.eulerAngles.x > 30f)) {
-			force = 40f * force/ 100f;
-			superficieAtual *= 30f;
+            force = 40f * force/ 100f;
+			superficieAtual *= 5f;
+            print("muito inclinado");
 		}
 
 		// se o angulo de atack for muito inclinado o força do motor cai para 5%
 		if ((this.transform.eulerAngles.x < 290f && this.transform.eulerAngles.x > 250f) || (this.transform.eulerAngles.x < 100f && this.transform.eulerAngles.x > 70f)) {
-			force = 5f * force/ 100f;
+            force = 5f * force/ 100f;
 		}
 
 		//ponto onde ira acontecer uma leve inclinação se o aviao não estiver em equilibrio
@@ -81,11 +93,11 @@ public class AirPlane : MonoBehaviour {
 		}
 
 		//calcula a força do ar que colide com a frente do avião
-		float drag = coeficienteAeroDinamica * (forceAr / 2) * superficieAtual * Mathf.Pow (fisica.getVelocity().magnitude,2);
+        float drag = coeficienteAeroDinamica * (forceAr / 2) * superficieAtual * Mathf.Pow ((fisica.getVelocity().magnitude*2),2);
 
-		fisica.AddForce(force);
-		fisica.AddForce (arFoce);
-		fisica.AddForce (drag*fisica.getVelocity().normalized*-1);
+        fisica.AddForce(force);
+        fisica.AddForce (arFoce);
+        fisica.AddForce (drag*fisica.getVelocity().normalized*-1);
 
 	}
 
@@ -160,7 +172,7 @@ public class AirPlane : MonoBehaviour {
 
 	public float getVelocityInKmh()
 	{
-		return fisica.getVelocity ().magnitude;
+        return fisica.getVelocity().magnitude;
 	}
 	
 	// Update is called once per frame

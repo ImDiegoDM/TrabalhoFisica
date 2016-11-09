@@ -19,6 +19,9 @@ public class MyFisica : MonoBehaviour {
 	Vector3 velocity= Vector3.zero;
 	Vector3 forcaResultante= Vector3.zero;
 
+    Vector3 linearVelocity= Vector3.zero;
+    Vector3 acelerationResultante=Vector3.zero;
+
 	List<Vector3> forcesAplied;
 
 	float time=0;
@@ -140,11 +143,15 @@ public class MyFisica : MonoBehaviour {
 
 		return (forcaResultante) / massa;
 	}
-
 	public void AddForce(Vector3 f) // adiciona uma força 
 	{
 		forcaResultante += f;
 	}
+
+    public void AddAceleration(Vector3 f)
+    {
+        acelerationResultante += f;
+    }
 
 	Vector3 ElevaVetor(Vector3 vetor, float indice)// metodo para elevar um vetor a um numero
 	{
@@ -176,9 +183,10 @@ public class MyFisica : MonoBehaviour {
 			velocity -= velocity * drag * Time.deltaTime;
 			
 			
-			this.transform.position += velocity*Time.deltaTime;
+            this.transform.position += (velocity)*Time.deltaTime;
 			
 			forcaResultante = Vector3.zero;
+            acelerationResultante = Vector3.zero;
 		}
 	}
 }
