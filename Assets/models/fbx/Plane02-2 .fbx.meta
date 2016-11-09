@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: c9a446ef51bc8c04d9906a62bfed8f5b
+timeCreated: 1478664741
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Aileron.L
+    100002: Aileron.L_end
+    100004: Aileron.R
+    100006: Aileron.R_end
+    100008: Armature
+    100010: Base
+    100012: Cube
+    100014: Helices
+    100016: Helices_end
+    100018: Leme
+    100020: Leme_end
+    100022: //RootNode
+    100024: Profundor.L
+    100026: Profundor.L_end
+    100028: Profundor.R
+    100030: Profundor.R_end
+    100032: Trem.L
+    100034: Trem.L_end
+    100036: Trem.R
+    100038: Trem.R_end
+    400000: Aileron.L
+    400002: Aileron.L_end
+    400004: Aileron.R
+    400006: Aileron.R_end
+    400008: Armature
+    400010: Base
+    400012: Cube
+    400014: Helices
+    400016: Helices_end
+    400018: Leme
+    400020: Leme_end
+    400022: //RootNode
+    400024: Profundor.L
+    400026: Profundor.L_end
+    400028: Profundor.R
+    400030: Profundor.R_end
+    400032: Trem.L
+    400034: Trem.L_end
+    400036: Trem.R
+    400038: Trem.R_end
+    4300000: Cube
+    7400000: Armature|Aileron Direito Alto
+    7400002: Armature|Aileron Direito Baixo.
+    7400004: Armature|Aileron Esquerdo Alto
+    7400006: Armature|Aileron Esquerdo Baixo
+    7400008: Armature|Helices
+    7400010: Armature|Leme Direita
+    7400012: Armature|Leme Esquerda
+    7400014: Armature|Profundor Direito Alto
+    7400016: Armature|Profundor Direito Baixo
+    7400018: Armature|Profundor Esquerdo Alto
+    7400020: Armature|Profundor Esquerdo Baixo
+    7400022: Armature|trems
+    7400024: Cube|Helices
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
