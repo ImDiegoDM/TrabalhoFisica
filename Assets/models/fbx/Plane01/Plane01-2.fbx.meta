@@ -69,7 +69,7 @@ ModelImporter:
     13700000: Plane
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
@@ -120,43 +120,43 @@ ModelImporter:
       - path: Armature/Base
         weight: 1
       - path: Armature/Base/Aileron.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.L/Aileron.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R
         weight: 1
       - path: Armature/Base/Aileron.R/Aileron.R_end
         weight: 1
       - path: Armature/Base/Helices
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices/Helices_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme/Leme_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L/Profundor.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R/Profundor.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L/Trem.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R/Trem.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal/TremFrontal_end
-        weight: 1
+        weight: 0
       - path: Plane
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -192,43 +192,43 @@ ModelImporter:
       - path: Armature/Base
         weight: 1
       - path: Armature/Base/Aileron.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.L/Aileron.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R
         weight: 1
       - path: Armature/Base/Aileron.R/Aileron.R_end
         weight: 1
       - path: Armature/Base/Helices
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices/Helices_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme/Leme_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L/Profundor.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R/Profundor.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L/Trem.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R/Trem.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal/TremFrontal_end
-        weight: 1
+        weight: 0
       - path: Plane
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -268,39 +268,39 @@ ModelImporter:
       - path: Armature/Base/Aileron.L/Aileron.L_end
         weight: 1
       - path: Armature/Base/Aileron.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R/Aileron.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices/Helices_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme/Leme_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L/Profundor.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R/Profundor.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L/Trem.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R/Trem.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal/TremFrontal_end
-        weight: 1
+        weight: 0
       - path: Plane
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -340,39 +340,39 @@ ModelImporter:
       - path: Armature/Base/Aileron.L/Aileron.L_end
         weight: 1
       - path: Armature/Base/Aileron.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R/Aileron.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices/Helices_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme/Leme_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L/Profundor.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R/Profundor.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L/Trem.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R/Trem.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal/TremFrontal_end
-        weight: 1
+        weight: 0
       - path: Plane
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -387,8 +387,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -408,43 +408,43 @@ ModelImporter:
       - path: Armature/Base
         weight: 1
       - path: Armature/Base/Aileron.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.L/Aileron.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R/Aileron.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices
         weight: 1
       - path: Armature/Base/Helices/Helices_end
         weight: 1
       - path: Armature/Base/Leme
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme/Leme_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L/Profundor.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R/Profundor.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L/Trem.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R/Trem.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal/TremFrontal_end
-        weight: 1
+        weight: 0
       - path: Plane
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -480,43 +480,43 @@ ModelImporter:
       - path: Armature/Base
         weight: 1
       - path: Armature/Base/Aileron.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.L/Aileron.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R/Aileron.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices/Helices_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme
         weight: 1
       - path: Armature/Base/Leme/Leme_end
         weight: 1
       - path: Armature/Base/Profundor.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L/Profundor.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R/Profundor.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L/Trem.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R/Trem.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal/TremFrontal_end
-        weight: 1
+        weight: 0
       - path: Plane
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -552,43 +552,43 @@ ModelImporter:
       - path: Armature/Base
         weight: 1
       - path: Armature/Base/Aileron.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.L/Aileron.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R/Aileron.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices/Helices_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme
         weight: 1
       - path: Armature/Base/Leme/Leme_end
         weight: 1
       - path: Armature/Base/Profundor.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L/Profundor.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R/Profundor.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L/Trem.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R/Trem.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal/TremFrontal_end
-        weight: 1
+        weight: 0
       - path: Plane
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -624,43 +624,43 @@ ModelImporter:
       - path: Armature/Base
         weight: 1
       - path: Armature/Base/Aileron.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.L/Aileron.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R/Aileron.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices/Helices_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme/Leme_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L/Profundor.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R
         weight: 1
       - path: Armature/Base/Profundor.R/Profundor.R_end
         weight: 1
       - path: Armature/Base/Trem.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L/Trem.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R/Trem.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal/TremFrontal_end
-        weight: 1
+        weight: 0
       - path: Plane
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -696,43 +696,43 @@ ModelImporter:
       - path: Armature/Base
         weight: 1
       - path: Armature/Base/Aileron.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.L/Aileron.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R/Aileron.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices/Helices_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme/Leme_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L/Profundor.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R
         weight: 1
       - path: Armature/Base/Profundor.R/Profundor.R_end
         weight: 1
       - path: Armature/Base/Trem.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L/Trem.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R/Trem.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal/TremFrontal_end
-        weight: 1
+        weight: 0
       - path: Plane
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -768,13 +768,13 @@ ModelImporter:
       - path: Armature/Base
         weight: 1
       - path: Armature/Base/Aileron.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.L/Aileron.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R/Aileron.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices
         weight: 1
       - path: Armature/Base/Helices/Helices_end
@@ -840,43 +840,43 @@ ModelImporter:
       - path: Armature/Base
         weight: 1
       - path: Armature/Base/Aileron.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.L/Aileron.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R/Aileron.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices/Helices_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme/Leme_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L
         weight: 1
       - path: Armature/Base/Profundor.L/Profundor.L_end
         weight: 1
       - path: Armature/Base/Profundor.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R/Profundor.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L/Trem.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R/Trem.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal/TremFrontal_end
-        weight: 1
+        weight: 0
       - path: Plane
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -914,41 +914,41 @@ ModelImporter:
       - path: Armature/Base/Aileron.L
         weight: 1
       - path: Armature/Base/Aileron.L/Aileron.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Aileron.R/Aileron.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices
-        weight: 1
+        weight: 0
       - path: Armature/Base/Helices/Helices_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme
-        weight: 1
+        weight: 0
       - path: Armature/Base/Leme/Leme_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.L
         weight: 1
       - path: Armature/Base/Profundor.L/Profundor.L_end
         weight: 1
       - path: Armature/Base/Profundor.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Profundor.R/Profundor.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.L/Trem.L_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R
-        weight: 1
+        weight: 0
       - path: Armature/Base/Trem.R/Trem.R_end
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal
-        weight: 1
+        weight: 0
       - path: Armature/Base/TremFrontal/TremFrontal_end
-        weight: 1
+        weight: 0
       - path: Plane
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0

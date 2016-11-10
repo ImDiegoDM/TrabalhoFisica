@@ -1,0 +1,1011 @@
+fileFormatVersion: 2
+guid: c9a446ef51bc8c04d9906a62bfed8f5b
+timeCreated: 1478664741
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Aileron.L
+    100002: Aileron.L_end
+    100004: Aileron.R
+    100006: Aileron.R_end
+    100008: Armature
+    100010: Base
+    100012: Cube
+    100014: Helices
+    100016: Helices_end
+    100018: Leme
+    100020: Leme_end
+    100022: //RootNode
+    100024: Profundor.L
+    100026: Profundor.L_end
+    100028: Profundor.R
+    100030: Profundor.R_end
+    100032: Trem.L
+    100034: Trem.L_end
+    100036: Trem.R
+    100038: Trem.R_end
+    400000: Aileron.L
+    400002: Aileron.L_end
+    400004: Aileron.R
+    400006: Aileron.R_end
+    400008: Armature
+    400010: Base
+    400012: Cube
+    400014: Helices
+    400016: Helices_end
+    400018: Leme
+    400020: Leme_end
+    400022: //RootNode
+    400024: Profundor.L
+    400026: Profundor.L_end
+    400028: Profundor.R
+    400030: Profundor.R_end
+    400032: Trem.L
+    400034: Trem.L_end
+    400036: Trem.R
+    400038: Trem.R_end
+    4300000: Cube
+    7400000: Armature|Aileron Direito Alto
+    7400002: Armature|Aileron Direito Baixo.
+    7400004: Armature|Aileron Esquerdo Alto
+    7400006: Armature|Aileron Esquerdo Baixo
+    7400008: Armature|Helices
+    7400010: Armature|Leme Direita
+    7400012: Armature|Leme Esquerda
+    7400014: Armature|Profundor Direito Alto
+    7400016: Armature|Profundor Direito Baixo
+    7400018: Armature|Profundor Esquerdo Alto
+    7400020: Armature|Profundor Esquerdo Baixo
+    7400022: Armature|trems
+    7400024: Cube|Helices
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Aileron Direito Alto
+      takeName: Armature|Aileron Direito Alto
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 0
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 0
+      - path: Armature/Base/Aileron.R
+        weight: 1
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 1
+      - path: Armature/Base/Helices
+        weight: 0
+      - path: Armature/Base/Helices/Helices_end
+        weight: 0
+      - path: Armature/Base/Leme
+        weight: 0
+      - path: Armature/Base/Leme/Leme_end
+        weight: 0
+      - path: Armature/Base/Profundor.L
+        weight: 0
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 0
+      - path: Armature/Base/Profundor.R
+        weight: 0
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 0
+      - path: Armature/Base/Trem.L
+        weight: 0
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 0
+      - path: Armature/Base/Trem.R
+        weight: 0
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Aileron Direito Baixo.
+      takeName: Armature|Aileron Direito Baixo.
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 0
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 0
+      - path: Armature/Base/Aileron.R
+        weight: 1
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 1
+      - path: Armature/Base/Helices
+        weight: 0
+      - path: Armature/Base/Helices/Helices_end
+        weight: 0
+      - path: Armature/Base/Leme
+        weight: 0
+      - path: Armature/Base/Leme/Leme_end
+        weight: 0
+      - path: Armature/Base/Profundor.L
+        weight: 0
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 0
+      - path: Armature/Base/Profundor.R
+        weight: 0
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 0
+      - path: Armature/Base/Trem.L
+        weight: 0
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 0
+      - path: Armature/Base/Trem.R
+        weight: 0
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Aileron Esquerdo Alto
+      takeName: Armature|Aileron Esquerdo Alto
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 1
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 1
+      - path: Armature/Base/Aileron.R
+        weight: 0
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 0
+      - path: Armature/Base/Helices
+        weight: 0
+      - path: Armature/Base/Helices/Helices_end
+        weight: 0
+      - path: Armature/Base/Leme
+        weight: 0
+      - path: Armature/Base/Leme/Leme_end
+        weight: 0
+      - path: Armature/Base/Profundor.L
+        weight: 0
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 0
+      - path: Armature/Base/Profundor.R
+        weight: 0
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 0
+      - path: Armature/Base/Trem.L
+        weight: 0
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 0
+      - path: Armature/Base/Trem.R
+        weight: 0
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Aileron Esquerdo Baixo
+      takeName: Armature|Aileron Esquerdo Baixo
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 1
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 1
+      - path: Armature/Base/Aileron.R
+        weight: 0
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 0
+      - path: Armature/Base/Helices
+        weight: 0
+      - path: Armature/Base/Helices/Helices_end
+        weight: 0
+      - path: Armature/Base/Leme
+        weight: 0
+      - path: Armature/Base/Leme/Leme_end
+        weight: 0
+      - path: Armature/Base/Profundor.L
+        weight: 0
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 0
+      - path: Armature/Base/Profundor.R
+        weight: 0
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 0
+      - path: Armature/Base/Trem.L
+        weight: 0
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 0
+      - path: Armature/Base/Trem.R
+        weight: 0
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Helices
+      takeName: Armature|Helices
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 0
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 0
+      - path: Armature/Base/Aileron.R
+        weight: 0
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 0
+      - path: Armature/Base/Helices
+        weight: 1
+      - path: Armature/Base/Helices/Helices_end
+        weight: 1
+      - path: Armature/Base/Leme
+        weight: 0
+      - path: Armature/Base/Leme/Leme_end
+        weight: 0
+      - path: Armature/Base/Profundor.L
+        weight: 0
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 0
+      - path: Armature/Base/Profundor.R
+        weight: 0
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 0
+      - path: Armature/Base/Trem.L
+        weight: 0
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 0
+      - path: Armature/Base/Trem.R
+        weight: 0
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Leme Direita
+      takeName: Armature|Leme Direita
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 1
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 1
+      - path: Armature/Base/Aileron.R
+        weight: 1
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 1
+      - path: Armature/Base/Helices
+        weight: 1
+      - path: Armature/Base/Helices/Helices_end
+        weight: 1
+      - path: Armature/Base/Leme
+        weight: 1
+      - path: Armature/Base/Leme/Leme_end
+        weight: 1
+      - path: Armature/Base/Profundor.L
+        weight: 1
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 1
+      - path: Armature/Base/Profundor.R
+        weight: 1
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 1
+      - path: Armature/Base/Trem.L
+        weight: 1
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 1
+      - path: Armature/Base/Trem.R
+        weight: 1
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Leme Esquerda
+      takeName: Armature|Leme Esquerda
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 1
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 1
+      - path: Armature/Base/Aileron.R
+        weight: 1
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 1
+      - path: Armature/Base/Helices
+        weight: 1
+      - path: Armature/Base/Helices/Helices_end
+        weight: 1
+      - path: Armature/Base/Leme
+        weight: 1
+      - path: Armature/Base/Leme/Leme_end
+        weight: 1
+      - path: Armature/Base/Profundor.L
+        weight: 1
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 1
+      - path: Armature/Base/Profundor.R
+        weight: 1
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 1
+      - path: Armature/Base/Trem.L
+        weight: 1
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 1
+      - path: Armature/Base/Trem.R
+        weight: 1
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Profundor Direito Alto
+      takeName: Armature|Profundor Direito Alto
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 0
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 0
+      - path: Armature/Base/Aileron.R
+        weight: 0
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 0
+      - path: Armature/Base/Helices
+        weight: 0
+      - path: Armature/Base/Helices/Helices_end
+        weight: 0
+      - path: Armature/Base/Leme
+        weight: 0
+      - path: Armature/Base/Leme/Leme_end
+        weight: 0
+      - path: Armature/Base/Profundor.L
+        weight: 0
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 0
+      - path: Armature/Base/Profundor.R
+        weight: 1
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 1
+      - path: Armature/Base/Trem.L
+        weight: 0
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 0
+      - path: Armature/Base/Trem.R
+        weight: 0
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Profundor Direito Baixo
+      takeName: Armature|Profundor Direito Baixo
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 0
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 0
+      - path: Armature/Base/Aileron.R
+        weight: 0
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 0
+      - path: Armature/Base/Helices
+        weight: 0
+      - path: Armature/Base/Helices/Helices_end
+        weight: 0
+      - path: Armature/Base/Leme
+        weight: 0
+      - path: Armature/Base/Leme/Leme_end
+        weight: 0
+      - path: Armature/Base/Profundor.L
+        weight: 0
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 0
+      - path: Armature/Base/Profundor.R
+        weight: 1
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 1
+      - path: Armature/Base/Trem.L
+        weight: 0
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 0
+      - path: Armature/Base/Trem.R
+        weight: 0
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Profundor Esquerdo Alto
+      takeName: Armature|Profundor Esquerdo Alto
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 0
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 0
+      - path: Armature/Base/Aileron.R
+        weight: 0
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 0
+      - path: Armature/Base/Helices
+        weight: 0
+      - path: Armature/Base/Helices/Helices_end
+        weight: 0
+      - path: Armature/Base/Leme
+        weight: 0
+      - path: Armature/Base/Leme/Leme_end
+        weight: 0
+      - path: Armature/Base/Profundor.L
+        weight: 1
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 1
+      - path: Armature/Base/Profundor.R
+        weight: 0
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 0
+      - path: Armature/Base/Trem.L
+        weight: 0
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 0
+      - path: Armature/Base/Trem.R
+        weight: 0
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Profundor Esquerdo Baixo
+      takeName: Armature|Profundor Esquerdo Baixo
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 0
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 0
+      - path: Armature/Base/Aileron.R
+        weight: 0
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 0
+      - path: Armature/Base/Helices
+        weight: 0
+      - path: Armature/Base/Helices/Helices_end
+        weight: 0
+      - path: Armature/Base/Leme
+        weight: 0
+      - path: Armature/Base/Leme/Leme_end
+        weight: 0
+      - path: Armature/Base/Profundor.L
+        weight: 1
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 1
+      - path: Armature/Base/Profundor.R
+        weight: 0
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 0
+      - path: Armature/Base/Trem.L
+        weight: 0
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 0
+      - path: Armature/Base/Trem.R
+        weight: 0
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 0
+      - path: Cube
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|trems
+      takeName: Armature|trems
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 1
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 1
+      - path: Armature/Base/Aileron.R
+        weight: 1
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 1
+      - path: Armature/Base/Helices
+        weight: 1
+      - path: Armature/Base/Helices/Helices_end
+        weight: 1
+      - path: Armature/Base/Leme
+        weight: 1
+      - path: Armature/Base/Leme/Leme_end
+        weight: 1
+      - path: Armature/Base/Profundor.L
+        weight: 1
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 1
+      - path: Armature/Base/Profundor.R
+        weight: 1
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 1
+      - path: Armature/Base/Trem.L
+        weight: 1
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 1
+      - path: Armature/Base/Trem.R
+        weight: 1
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cube|Helices
+      takeName: Cube|Helices
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Base
+        weight: 1
+      - path: Armature/Base/Aileron.L
+        weight: 0
+      - path: Armature/Base/Aileron.L/Aileron.L_end
+        weight: 0
+      - path: Armature/Base/Aileron.R
+        weight: 0
+      - path: Armature/Base/Aileron.R/Aileron.R_end
+        weight: 0
+      - path: Armature/Base/Helices
+        weight: 1
+      - path: Armature/Base/Helices/Helices_end
+        weight: 1
+      - path: Armature/Base/Leme
+        weight: 1
+      - path: Armature/Base/Leme/Leme_end
+        weight: 1
+      - path: Armature/Base/Profundor.L
+        weight: 0
+      - path: Armature/Base/Profundor.L/Profundor.L_end
+        weight: 0
+      - path: Armature/Base/Profundor.R
+        weight: 0
+      - path: Armature/Base/Profundor.R/Profundor.R_end
+        weight: 0
+      - path: Armature/Base/Trem.L
+        weight: 1
+      - path: Armature/Base/Trem.L/Trem.L_end
+        weight: 1
+      - path: Armature/Base/Trem.R
+        weight: 1
+      - path: Armature/Base/Trem.R/Trem.R_end
+        weight: 1
+      - path: Cube
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
